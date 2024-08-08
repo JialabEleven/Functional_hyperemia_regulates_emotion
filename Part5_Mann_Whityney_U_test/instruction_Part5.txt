@@ -1,0 +1,2 @@
+Code 'Mann-Whitney U test' is used to analyze non-continuous data that does not conform to a normal distribution, 
+such as fecal particles, signal dots in vessels, and rearing index

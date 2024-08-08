@@ -1,0 +1,6 @@
+Calculation of the average value of cerebral blood flow at plateau under whisker stimulation
+
+Acquired laser speckle data were analyzed in MATLAB (version R2021a; MathWorks) using custom-written scripts. 
+The peak and valley intensity threshold were determined visually for each image to ensure finding the right point to reach the peak of the blood flow plateau. 
+Within the threshold range, the inflection points where the value rises rapidly to a stable level was selected as the point to reach the blood flow plateau. 
+The mean of blood flow from the beginning of the plateau phase to the end of stimulation was calculated.

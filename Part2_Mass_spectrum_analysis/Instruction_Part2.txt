@@ -1,0 +1,7 @@
+Code 'data_extraction_accession' in file 'First_spectrum_detection' is used to preprocess the information of mass spectrum between experiment and control, the thresholds to extract the key data of mass spectrum are set, which are shown in test_experiment1(results) and save as deal_block_1.
+
+Code 'different_groups_analysis' in file 'Second_different_spectrum_groups_analysis' is used to extract the protein which is needed to appear at least once in the three IP experiments. The data of deal_block_1, deal_block_2, deal_block_3 are the spectrum results in three IP experiments which are preprocessed in 'First_spectrum_detection', then they are compared to get reliable mass spectrum results which are shown in 'data_merge'. The proteins that meet the three IP experiments are shown in compare_block1_block2_block3, and the proteins which meet two IP experiments are shown in compare_block1_block2, compare_block1_block3, and compare_block2_block3.
+
+Code 'KeggEnrich' is used to process the data of protein obtained from above codes to show the numbers of protein during the channel enrichment.
+
+

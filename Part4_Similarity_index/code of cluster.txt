@@ -1,0 +1,11 @@
+read.csv("cko.csv")
+a = read.csv("cko.csv", stringsAsFactors = FALSE)
+
+matrixdata = as.matrix(a[, -1]) 
+matrixdata = apply(matrixdata, 2, as.numeric) 
+
+distmatrix = 1 - matrixdata
+
+hc1 = hclust(as.dist(distmatrix), method = "ward.D2")
+
+plot(hc1, main = "cluster", hang = -1)

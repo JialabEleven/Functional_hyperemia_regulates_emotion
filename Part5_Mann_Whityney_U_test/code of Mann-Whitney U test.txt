@@ -1,0 +1,15 @@
+library(rstatix)
+
+group1 <- c() 
+group2 <- c() 
+
+data <- data.frame(
+  value = c(group1, group2), 
+  group = factor(rep(c("group1", "group2"), c(length(group1), length(group2))))
+)
+
+
+test_result_detailed <- wilcox_test(value ~ group, data = data, detailed = TRUE)
+
+
+print(test_result_detailed)
